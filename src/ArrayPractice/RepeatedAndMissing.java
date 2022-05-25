@@ -2,7 +2,9 @@ package ArrayPractice;
 
 import java.util.Arrays;
 
-public class RepeatedAndMissing {
+public class
+
+RepeatedAndMissing {
     public static int[] findTwoElement(int[] arr,int n){
         int[] ans=new int[2];
         int[] check=new int[n+1];
