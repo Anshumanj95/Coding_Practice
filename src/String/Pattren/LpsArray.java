@@ -28,7 +28,7 @@ public class LpsArray {
         return lps;
     }
     public static void main(String[] args) {
-        String s="ababa";
+        String s="ababab";
         System.out.println(Arrays.toString(lpsArray(s)));
 
     }
