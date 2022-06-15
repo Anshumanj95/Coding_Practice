@@ -15,7 +15,7 @@ public class RotateExtraSpace {
         int[][] rotate=new int[n][n];
         for(int i=0;i<n;i++){
             for(int j=0;j<n;j++){
-                rotate[n-i-1][j]=matrix[j][i];//for clockwise replace row and column with each other on both side
+                rotate[j][n-i-1]=matrix[i][j];//for clockwise replace row and column with each other on both side
             }
         }
         //without extra space
