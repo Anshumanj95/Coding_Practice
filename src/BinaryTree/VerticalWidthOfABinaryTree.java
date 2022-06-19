@@ -5,6 +5,7 @@ import java.util.Set;
 import static BinaryTree.Tree.Node;
 public class VerticalWidthOfABinaryTree {
     static int verticalWidth(Node root) {
+
         return traverse(root, 0, new HashSet<>()).size();
     }
     static Set<Integer> traverse(Node root, int line, Set<Integer> set) {
