@@ -15,8 +15,6 @@ public class ConstructBinaryTreeFromInorderAndPostorder {
                 break;
             }
         }
-        if(is==ie)
-            return root;
         root.right=construct(in,po,inIndex+1,ie);
         root.left=construct(in,po,is,inIndex-1);
 
