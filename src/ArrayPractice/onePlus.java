@@ -10,13 +10,12 @@ public class onePlus {
             a.remove(0);
         for(int i=a.size()-1;i>=0;i--){
             int num=a.get(i);
+            a.remove(i);
             if(num==9){
-                a.remove(i);
                 a.add(i,0);
                 carry=1;
             }
             else{
-                a.remove(i);
                 a.add(i,num+1);
                 carry=0;
                 break;
