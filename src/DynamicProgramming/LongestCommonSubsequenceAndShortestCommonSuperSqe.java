@@ -48,7 +48,7 @@ public class LongestCommonSubsequenceAndShortestCommonSuperSqe {
     }
     public static String  printLcs(int[][] dp,String s1,String s2){
         int index=dp[s1.length()][s2.length()];
-        StringBuffer s=new StringBuffer();
+        StringBuilder s=new StringBuilder();
 
         int i=s1.length();
         int j=s2.length();

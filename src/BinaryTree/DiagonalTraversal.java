@@ -18,6 +18,7 @@ public class DiagonalTraversal {
                 curr=curr.right;
             }
         }
+        
         return ans;
     }
     public static void main(String[] args) {
