@@ -5,7 +5,10 @@ import java.util.Arrays;
 public class Largest_Number_formed_from_an_Array {
     public static String largestNumber(String[] arr){
         StringBuilder ans=new StringBuilder();
-        Arrays.sort(arr,(a,b)-> (a+b).compareTo(b+a)>0?-1:1);
+        Arrays.sort(arr,(a,b)-> {
+            if((a+b).compareTo(b+a)==0) return 0;
+            return (a+b).compareTo(b+a)>0?-1:1;
+        });
         for (String s:arr)
             ans.append(s);
         return ans.toString();
