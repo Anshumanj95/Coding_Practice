@@ -17,6 +17,23 @@ public class NthNodeFromEnd {
         }
         System.out.println(second.data);
     }
+    public static Node removeNthFromEnd(Node head,int n){
+        if(head==null)
+            return null;
+        Node first=head;
+        for (int i=0;i<n;i++)
+            first=first.next;
+        if (first==null)
+            return head.next;
+        Node second=head;
+        while (first.next!=null){
+            first=first.next;
+            second=second.next;
+
+        }
+        second.next=second.next.next;
+        return head;
+    }
     public static void main(String[] args) {
         Node head=new Node(10);
         head.next=new Node(20);
