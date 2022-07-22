@@ -1,5 +1,6 @@
 package hash;
 
+
 import java.util.HashSet;
 
 public class PositiveNegativePair {
@@ -16,6 +17,7 @@ public class PositiveNegativePair {
     public static void main(String[] args) {
         int[] arr={1,3,6,-1,-2,2,-3};
         findAllPairs(arr);
+
 
     }
 }
