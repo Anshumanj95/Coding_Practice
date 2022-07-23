@@ -1,2 +1,8 @@
 # Project exclude paths
+
 /out/
+/src/hello.java
+/src/Main.java
+/src/test.java
+/src/testth.java
+/.idea/vcs.xml
