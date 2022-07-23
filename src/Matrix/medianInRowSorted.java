@@ -22,8 +22,16 @@ public class medianInRowSorted {
             int midPos = 0;
             int pos = 0;
             for (int i = 0; i < r; ++i){
-                pos = Arrays.binarySearch(mat[i],mid)+1;
-                midPos+=Math.abs(pos);
+                pos = Arrays.binarySearch(mat[i],mid);
+                if(pos<0){
+                    pos=Math.abs(pos)-1;
+                }
+                else{
+                    // for duplicates
+                    while(pos<c && mat[i][pos]==mid)
+                        pos+=1;
+                }
+                midPos+=pos;
             }
             if (midPos < medPos)
                 min = mid + 1;
