@@ -1,5 +1,7 @@
 package DynamicProgramming;
 
+import java.util.Arrays;
+
 public class Max_sum_subarray_by_removing_at_most_one_element {
     public static int solve1(int[] arr,int n){
         int sum=arr[0];
@@ -31,16 +33,15 @@ public class Max_sum_subarray_by_removing_at_most_one_element {
             right[i]=Math.max(arr[i],arr[i]+right[i+1]);
             max=Math.max(max,left[i]);
         }
-
-        System.out.println();
+        System.out.println(Arrays.toString(left));
+        System.out.println(Arrays.toString(right));
         for (int i=1;i<n-1;i++){
             max=Math.max(left[i-1]+right[i+1],max);
         }
         return max;
     }
     public static void main(String[] args) {
-        int[] arr={1,2,3,-4,5};
-        System.out.println(solve1(arr,arr.length));
+        int[] arr={-2,-3,4,-1,-2,1,5,-3};
         System.out.println(solve2(arr, arr.length));
 
     }
