@@ -32,7 +32,9 @@ public class MultiPlyString {
             System.out.println(Arrays.toString(product));
         }
         System.out.println(Arrays.toString(product));
-        int start=product[0]!=0?0:1;
+        int start=0;
+        while (product[start]==0)
+            start++;
         StringBuilder ans=new StringBuilder();
         for (int i=start;i<len;i++)
             ans.append(product[i]);
