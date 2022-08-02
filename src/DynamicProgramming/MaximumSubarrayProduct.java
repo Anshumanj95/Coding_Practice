@@ -1,4 +1,4 @@
-package ArrayPractice;
+package DynamicProgramming;
 
 public class MaximumSubarrayProduct {
     public static int max_product_subArray(int[] arr){
