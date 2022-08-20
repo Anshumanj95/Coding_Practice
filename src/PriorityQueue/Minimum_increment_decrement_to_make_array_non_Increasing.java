@@ -18,7 +18,7 @@ public class Minimum_increment_decrement_to_make_array_non_Increasing {
         return count;
     }
     public static void main(String[] args) {
-        int[] arr={3,1,5,1};
+        int[] arr={3,1,5,2};
         System.out.println(minimum(arr,arr.length));
     }
 }
