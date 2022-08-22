@@ -7,7 +7,7 @@ public class NoOfSubArray {
     public static int subArrayWithEqualZeroAndOne(int[] arr){
         for(int i=0;i<arr.length;i++){
             if(arr[i]==0)
-                arr[i]=1;
+                arr[i]=-1;
         }
         HashMap<Integer,Integer> h=new HashMap<>();
         int pre=0;
