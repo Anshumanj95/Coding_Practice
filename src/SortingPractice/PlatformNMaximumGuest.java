@@ -15,7 +15,6 @@ public class PlatformNMaximumGuest {
                     res=curr;
                 }
                 i++;
-
             }
             else{
                 curr--;

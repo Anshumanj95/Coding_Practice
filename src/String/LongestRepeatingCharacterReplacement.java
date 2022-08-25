@@ -12,6 +12,7 @@ public class LongestRepeatingCharacterReplacement {
             maxFreq=Math.max(maxFreq,map.get(arr[right]));
             if ((right-left+1)-maxFreq>k){
                 map.put(arr[left],map.get(arr[left])-1);
+
                 left++;
             }
             maxLen=Math.max(maxLen,right-left+1);
