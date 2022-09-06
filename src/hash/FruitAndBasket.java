@@ -5,6 +5,7 @@ import java.util.HashMap;
 public class FruitAndBasket {
     public static int findMaxFruits(String str,int n){
         HashMap<Character,Integer> map=new HashMap<>();
+        int ans=0;
         for (int i=0,j=0;j<n && i<n;){
             char ch=str.charAt(j);
             if (map.size()<2){
@@ -27,10 +28,12 @@ public class FruitAndBasket {
                     }
                 }
             }
+            int curr=0;
+            for (int val:map.values())
+                curr+=val;
+            ans=Math.max(ans,curr);
         }
-        int ans=0;
-        for (int val:map.values())
-            ans+=val;
+
         return ans;
     }
     public static void main(String[] args) {
