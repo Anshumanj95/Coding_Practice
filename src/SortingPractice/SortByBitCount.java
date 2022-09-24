@@ -4,16 +4,14 @@ import java.util.*;
 
 public class SortByBitCount {
     public static void sort(int[] arr,int n){
-        Map<Integer, ArrayList<Integer>> map=new LinkedHashMap<>();
+        TreeMap<Integer, ArrayList<Integer>> map=new TreeMap<>(Collections.reverseOrder());
         for (int i:arr){
            int setBits=Integer.bitCount(i);
            map.putIfAbsent(setBits,new ArrayList<>());
            map.get(setBits).add(i);
         }
-        TreeMap<Integer,ArrayList<Integer>> sorted=new TreeMap<>(Collections.reverseOrder());
-        sorted.putAll(map);
         ArrayList<Integer> ans=new ArrayList<>();
-        for (Map.Entry<Integer,ArrayList<Integer>> x:sorted.entrySet()){
+        for (Map.Entry<Integer,ArrayList<Integer>> x:map.entrySet()){
             ans.addAll(x.getValue());
         }
         for (int i=0;i<n;i++)

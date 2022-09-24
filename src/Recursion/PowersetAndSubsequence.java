@@ -1,6 +1,6 @@
 package Recursion;
 
-public class Powerset {
+public class PowersetAndSubsequence {
     public static void set(String s,String ans){
         if(s.length()==0){
             System.out.print(ans+",");

@@ -2,7 +2,7 @@ package Sorting;
 
 import java.util.Arrays;
 
-public class waveArray {
+public class  waveArray {
     public static void wave(int[] arr,int n){
         Arrays.sort(arr);
         for(int i=0;i<n-1;i=i+2){
