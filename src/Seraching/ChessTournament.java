@@ -1,6 +1,8 @@
 package Seraching;
 
 import java.util.Arrays;
+// similar question are on coding ninja with same logic
+// 1.Aggressive cows
 
 public class ChessTournament {
     //question statement on coding ninja interview question of salesfroce..

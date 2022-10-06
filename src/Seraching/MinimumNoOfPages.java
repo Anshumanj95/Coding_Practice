@@ -2,6 +2,10 @@ package Seraching;
 
 import java.util.Arrays;
 
+// similar question are on coding ninja with same logic
+// 1.painter's partition problem
+// 2.minimum time to solve problems
+
 public class MinimumNoOfPages {
     public static int minimum(int[] arr,int n,int k){
         int high= Arrays.stream(arr).sum();
