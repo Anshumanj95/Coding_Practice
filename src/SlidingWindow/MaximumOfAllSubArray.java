@@ -1,4 +1,4 @@
-package Queue;
+package SlidingWindow;
 
 import java.util.ArrayDeque;
 import java.util.Arrays;

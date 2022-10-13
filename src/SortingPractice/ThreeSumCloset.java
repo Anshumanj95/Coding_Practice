@@ -7,7 +7,7 @@ public class ThreeSumCloset {
         Arrays.sort(arr);
         int ans=Integer.MAX_VALUE;
         for (int k=0;k<n-2;k++){
-            int i=k+1,j=n-2;
+            int i=k+1,j=n-1;
             while (i<j){
                 int curr=arr[i]+arr[j]+arr[k];
                 if (Math.abs(curr-x)<Math.abs(ans-x))
