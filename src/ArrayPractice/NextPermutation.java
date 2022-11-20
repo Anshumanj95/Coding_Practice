@@ -29,10 +29,12 @@ public class NextPermutation {
         return ans;
     }
     public static void reverse(int[] arr,int st,int end){
-        for (int i=st,j=end;i<j;i++,j--){
-            int temp=arr[i];
-            arr[i]=arr[j];
-            arr[j]=temp;
+       while(st<end){
+            int temp=arr[st];
+            arr[st]=arr[end];
+            arr[end]=temp;
+            st++;
+            end--;
         }
     }
     public static void main(String[] args) {

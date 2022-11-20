@@ -1,8 +1,8 @@
 package Maths;
 
-import java.util.Scanner;
+import java.util.Collections;
 
-public class Math {
+public class Maths {
     public static int trailingZeros(int n){
         int ans=0;
         for(int i=5;i<=n;i=i*5){

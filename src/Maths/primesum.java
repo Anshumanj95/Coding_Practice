@@ -28,8 +28,10 @@ public class primesum {
         int h=prime.size()-1;
         while(l<=h){
             if(prime.get(l)+prime.get(h)==A){
-                ans.add(l);
-                ans.add(h);
+                ans.add(prime.get(l));
+                ans.add(prime.get(h));
+                l++;
+                h--;
             }
             else if(prime.get(l)+prime.get(h)<A)
                 l++;
@@ -40,7 +42,7 @@ public class primesum {
     }
 
     public static void main(String[] args) {
-        ArrayList<Integer> prime=primeSum(7);
+        ArrayList<Integer> prime=primeSum(16);
         for(int i=0;i<prime.size();i++){
             System.out.print(prime.get(i)+" ");
         }

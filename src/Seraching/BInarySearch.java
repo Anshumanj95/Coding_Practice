@@ -16,5 +16,6 @@ public class BInarySearch {
     public static void main(String[] args) {
         int[] arr={1,2,3,4,5,6};
         System.out.println(binarySearch(arr,2,0,arr.length-1));
+
     }
 }

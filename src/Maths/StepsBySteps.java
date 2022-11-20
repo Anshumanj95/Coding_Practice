@@ -1,0 +1,29 @@
+package Maths;
+
+public class StepsBySteps {
+    /*
+    Given a target A on an infinite number line, i.e. -infinity to +infinity.
+
+    You are currently at position 0, and you need to reach the target by moving according to the below rule:
+
+    In ith move you can take i steps forward or backward.
+    Find the minimum number of moves required to reach the target.
+     */
+    public static int minimumStepsToReachTarget(int a){
+        a= Math.abs(a);
+        int sum=0;
+        int i=0;
+        while (sum<a){
+            i++;
+            sum+=i;
+        }
+        while ((sum-a)%2==1){
+            i++;
+            sum+=i;
+        }
+        return i;
+    }
+    public static void main(String[] args) {
+        System.out.println(minimumStepsToReachTarget(2));
+    }
+}

@@ -2,10 +2,10 @@ package ArrayPractice;
 
 import java.util.Arrays;
 
-public class StoreTwoValueInOne {
+public class StoreTwoValueInOneRearrange {
     public static void arrange(long[] arr,int n){
         for (int i=0;i<n;i++){
-            arr[i]+= (arr[(int) arr[i%n]]%n)*n;
+            arr[i]+= (arr[(int) arr[i]]%n)*n;
         }
         for (int i=0;i<n;i++)
             arr[i]=arr[i]/n;
